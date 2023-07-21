@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <style>
+      .menu {
+      }
+      .menu-item {
+        list-style: none;
+        background: green;
+        width: 100px;
+        float: left;
+        postion: relative;
+      }
+      .sub-menu {
+        background: blue;
+      }
+      .submenu-item {
+        list-style: none;
+        background: yellow;
+        width: 100px;
+      }
+
+      .sub-menu {
+        /* xóa cái padding trước submenu-item */
+        padding: 0;
+        position: absolute;
+        top: 40px;
+        /* left: 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu-item">Home1</li>
+      <li class="menu-item">
+        Home2
+        <ul class="sub-menu">
+          <li class="submenu-item">Home1</li>
+          <li class="submenu-item">Home1</li>
+          <li class="submenu-item">Home1</li>
+          <li class="submenu-item">Home1</li>
+          <li class="submenu-item">Home1</li>
+        </ul>
+      </li>
+      <li class="menu-item">Home3</li>
+      <li class="menu-item">Home4</li>
+      <li class="menu-item">Home5</li>
+    </ul>
+  </body>
+</html>
